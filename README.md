@@ -1,30 +1,30 @@
-## 6 Button Esp32 based Matrix
+# 6 Button Esp32 based Matrix
 
 Simple 6 button matrix control panel firmware written in C++ using the Arduino framework based on a Esp32 C3 Supermini devboard
 
-# Required Hardware
+## Required Hardware
 *Esp32 C3-Supermini devboard
 *6 buttons (any type works)
 *Wires (or something to wire the buttons to the microcontroller)
 
-# Setup
+## Setup
 This piece of code was built using [PlaformIO](https://platformio.org/)
 
 Download the PlatformIO VSCode extension [here](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide) or from the "Extensions" tab in VSCode
 
 Clone this repo 
 
-"""bash
+```bash
 git clone https://github.com/notnotdaniel111/esp32-based-6-button-matrix
-"""
+```
 
 Open the cloned repo in VSCode and then flash the devboard, after that it should work.
 
-# Working principle
+## Working principle
 
 The chip sends a 12 character long string through uart and when a button is pressed down, one of the button state monitoring numbers (always an uneven character) changes.
 
-# Example with a Flipper Zero
+## Example with a Flipper Zero
 
 <img src="">
 When fully inactive
@@ -32,12 +32,12 @@ When fully inactive
 <img src="">
 When a button (fourth) is pressed down
 
-# Init 
+## Init 
 
 To make your job easier, there is an initialization string (############) that the device sends when it's ready.
 *When you design anything using this project, I recommend only powering on the board after the main hardware (for example a Raspberry Pi) is fully booted up and are ready.
 
-# Wiring
+## Wiring
 
 | Button | ESP32-C3 Pin | Connected Pin / Function | Notes |
 | :--- | :--- | :--- | :--- |
