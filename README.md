@@ -18,7 +18,7 @@ Clone this repo
 git clone https://github.com/notnotdaniel111/esp32-based-6-button-matrix
 ```
 
-Make a project in VSCode with PlatformIO, from the cloned repo place the [main.cpp](src/main.cpp) into the /src folder and the [platformio.ini](ESP32_HID/platformio.ini) files into the project and then flash the devboard, after that it should work.
+Make a project in VSCode with PlatformIO, from the cloned repo place the [main.cpp](ESP32_HID/src/main.cpp) into the /src folder and the [platformio.ini](ESP32_HID/platformio.ini) files into the project and then flash the devboard, after that it should work.
 
 ## Working principle
 
