@@ -3,9 +3,9 @@
 Simple 6 button matrix control panel firmware written in C++ using the Arduino framework based on a Esp32 C3 Supermini devboard
 
 ## Required Hardware
-*Esp32 C3-Supermini devboard
-*6 buttons (any type works)
-*Wires (or something to wire the buttons to the microcontroller)
+* Esp32 C3-Supermini devboard
+* 6 buttons (any type works)
+* Wires (or something to wire the buttons to the microcontroller)
 
 ## Setup
 This piece of code was built using [PlaformIO](https://platformio.org/)
@@ -18,7 +18,7 @@ Clone this repo
 git clone https://github.com/notnotdaniel111/esp32-based-6-button-matrix
 ```
 
-Open the cloned repo in VSCode and then flash the devboard, after that it should work.
+Make a project in VSCode with PlatformIO, from the cloned repo place the [main.cpp](src/main.cpp) into the /src folder and the [platformio.ini](ESP32_HID/platformio.ini) files into the project and then flash the devboard, after that it should work.
 
 ## Working principle
 
@@ -37,7 +37,7 @@ When a button (fourth) is pressed down
 ## Init 
 
 To make your job easier, there is an initialization string (############) that the device sends when it's ready.
-*When you design anything using this project, I recommend only powering on the board after the main hardware (for example a Raspberry Pi) is fully booted up and are ready.
+* When you design anything using this project, I recommend only powering on the board after the main hardware (for example a Raspberry Pi) is fully booted up and are ready.
 
 ## Wiring
 
