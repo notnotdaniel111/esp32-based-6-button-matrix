@@ -26,10 +26,12 @@ The chip sends a 12 character long string through uart and when a button is pres
 
 ## Example with a Flipper Zero
 
-<img src="">
+<img src="images/IMG_7401.jpeg" width=50% >
+
 When fully inactive
 
-<img src="">
+<img src="images/IMG_7400.jpeg" width=50%>
+
 When a button (fourth) is pressed down
 
 ## Init 
@@ -39,18 +41,21 @@ To make your job easier, there is an initialization string (############) that t
 
 ## Wiring
 
-| Button | ESP32-C3 Pin | Connected Pin / Function | Notes |
-| :--- | :--- | :--- | :--- |
-| **Button 1** | `GPIO 10` | Leg 1 $\rightarrow$ Pin, Leg 2 $\rightarrow$ 3.3V | Clean GPIO |
-| **Button 2** | `GPIO 4`  | Leg 1 $\rightarrow$ Pin, Leg 2 $\rightarrow$ 3.3V | Replaced GPIO 9 |
-| **Button 3** | `GPIO 3`  | Leg 1 $\rightarrow$ Pin, Leg 2 $\rightarrow$ 3.3V | Replaced GPIO 8 |
-| **Button 4** | `GPIO 7`  | Leg 1 $\rightarrow$ Pin, Leg 2 $\rightarrow$ 3.3V | Clean GPIO |
-| **Button 5** | `GPIO 6`  | Leg 1 $\rightarrow$ Pin, Leg 2 $\rightarrow$ 3.3V | Clean GPIO |
-| **Button 6** | `GPIO 5`  | Leg 1 $\rightarrow$ Pin, Leg 2 $\rightarrow$ 3.3V | Clean GPIO |
+| Button | ESP32-C3 Pin | 
+| :--- | :--- |
+| **Button 1** | `GPIO 10` | 
+| **Button 2** | `GPIO 4`  | 
+| **Button 3** | `GPIO 3`  | 
+| **Button 4** | `GPIO 7`  | 
+| **Button 5** | `GPIO 6`  | 
+| **Button 6** | `GPIO 5`  | 
 
 ### UART Output
 | ESP32-C3 Pin | Target Device | Notes |
 | :--- | :--- | :--- |
 | `GPIO 21 (TX)` | `RX` | Serial transmission line |
-| `GPIO 20 (RX)` | `TX` | Optional (if bidirectional) |
+| `GPIO 20 (RX)` | `TX` | Optional (if bidirectional and you add something to the code) |
 | `GND` | `GND` | Common ground reference |
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
